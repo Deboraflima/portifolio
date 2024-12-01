@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Débora F. de Lima - Portfólio</title>
+
+    <!-- Link para o Bootstrap 4 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilos gerais */
+        body {
+            background-color: #F2F2F2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            background-color: #deb887;
+        }
+
+        h2 {
+            background-color: #FFFACD;
+        }
+
+        h4 {
+            background-color: #f4a460;
+        }
+
+        /* Formatação de imagens e conteúdo */
+        img {
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Links e botões */
+        a {
+            text-decoration: none;
+            color: #deb887;
+        }
+
+        a:hover {
+            color: #f4a460;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            table, form {
+                width: 100%;
+            }
+        }
+
+        /* Estilo para os cards do Bootstrap */
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Menu de navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#Topo">Débora F. de Lima</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Identificacao">Identificação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Formacao">Formação Acadêmica</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Atuacao">Atuação Profissional</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Hobbies">Hobbies</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Título e imagem -->
+<div class="container" align="center">
+    <img src= "Debora Lima.jpeg" width="250px" alt="Débora Lima">
+    <h1>Débora Lima &#129293;</h1>
+</div>
+
+<!-- Seção Identificação -->
+<section id="Identificacao" class="container">
+    <h2>Nome completo:</h2>
+    <h3>Débora Félix de Lima</h3>
+
+    <h2>Um pouco sobre mim:</h2>
+    <h3>Casada e tenho 1 filho de 6 anos.</h3>
+
+    <h2>Data de nascimento:</h2>
+    <h3>23/02/1988</h3>
+
+    <h2>Endereço:</h2>
+    <h3>Sobradinho</h3>
+
+    <h2>Email:</h2>
+    <h3>debora.dfl@gmail.com</h3>
+</section>
+
+<!-- Seção Formação Acadêmica -->
+<section id="Formacao" class="container">
+    <h2>Formação acadêmica:</h2>
+    <h3>Cursando Análise e Desenvolvimento de Sistemas | Estou no 2º semestre.</h3>
+</section>
+
+<!-- Seção Atuação Profissional -->
+<section id="Atuacao" class="container">
+    <h2>Atuação profissional:</h2>
+    <h3>Lash Designer</h3>
+</section>
+
+<!-- Seção Hobbies -->
+<section id="Hobbies" class="container">
+    <h2>Hobbies:</h2>
+    <h3>Assistir séries policiais</h3>
+</section>
+
+<!-- Card com Objetivos -->
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h4>Pretendo terminar a faculdade e passar em um dos próximos concursos na área de TI.</h4>
+            <a href="https://www.estrategiaconcursos.com.br/blog/concursos-ti/?msockid=0b70173a598d6e981e6e030c58506f8c" target="_blank">Plataforma de Cursos para Concursos</a>
+        </div>
+    </div>
+</div>
+
+<!-- Vídeo -->
+<div class="container" align="center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BdGkcsyJ-2E?si=QAWABMTvtfz7iDuk&amp;start=1" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<!-- Formulário de Contato -->
+<h2 class="text-center">Contato</h2>
+<div class="container">
+    <form action="processar_formulario.php" method="post">
+        <div class="form-group">
+            <label for="celular">Celular:</label>
+            <input type="text" class="form-control" id="celular" name="celular" placeholder="61 986825751" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="debora.dfl@gmail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea class="form-control" id="feedback" name="feedback" rows="4" placeholder="Escreva sua opinião..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">ENVIAR</button>
+    </form>
+</div>
+
+<!-- Links de navegação -->
+<div class="text-center mt-4">
+    <a href="debyportifolio.html">Voltar</a> | 
+    <a href="#Topo">Topo</a>
+</div>
+
+<!-- Scripts Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
